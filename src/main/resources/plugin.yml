@@ -1,0 +1,36 @@
+name: OLCalculator
+version: '${project.version}'
+main: oluni.official.minecraft.plugin.ol.olcalculator.OLCalculator
+api-version: '1.16'
+author: Oluni_Official
+commands:
+  olcalculator:
+    description: Выполняет математические операции (например, 800+300).
+    usage: /<command> <выражение>
+  olc:
+    description: Альтернативная команда для выполнения математических операций.
+    usage: /<command> <выражение>
+    aliases: [olcalculator]
+  olcalc:
+    description: Альтернативная команда для выполнения математических операций.
+    usage: /<command> <выражение>
+    aliases: [olcalculator, olc]
+  olk:
+    description: Конвертирует массу между единицами (например, килограммы в тонны).
+    usage: /<command> <из_какой_величины> <в_какую_величину> <число>
+  olm:
+    description: Конвертирует длину между единицами (например, метры в километры).
+    usage: /<command> <из_какой_величины> <в_какую_величину> <число>
+  olt:
+    description: Конвертирует время между единицами (например, секунды в минуты).
+    usage: /<command> <из_какой_величины> <в_какую_величину> <число>
+  olcconfig:
+    description: Change plugin language.
+    permission: olcalculator.olcconfig
+    usage: /<command> (en|ru)
+
+permissions:
+  olcalculator.olcconfig:
+    default: op
+  olcalculator.reload:
+    default: op
